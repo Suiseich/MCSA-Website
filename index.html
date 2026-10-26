@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCSA - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/MCSA Logo 2024-2025.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <!-- Facebook Plugin -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
+    <!-- Include Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/MCSA Logo 2024-2025.png" alt="..."/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Homepage Content -->
+        <header class="masthead">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="assets/radiotrailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container header-content">
+                <div class="masthead-heading text-uppercase">MASS COMMUNICATION STUDENTS ASSOCIATION</div>
+                <div class="masthead-subheading">WELCOME TO THE MASS COMMUNICATION — a realm where change begins and voices unite across borders. Come and join us as we enter a revolutionary era through the power of our COMM-UNITY!</div>
+            </div>
+        </header>
+       
+        <div class="row">
+            <div class="sastext text-center">
+                <h1>SCHOOL OF ARTS AND SCIENCES</h1>
+                <h3>Vision and Mission</h3>
+            </div>
+            <div class="visionmission col-md-6 text-center">
+                <h2>VISION</h2>
+                <p>In consonance with the Catholic identity of the University of the Assumption as an evangelized and evangelizingcommunity, the School of Arts and Sciences envisions itself to be a Christ-centered institution whose faculty, students and graduates manifest excellence in intellectual pursuit (Scientia): unwavering conscience for moral aspirations (Virtus): and unparalleled drive for social leadership and responsibility (Communitas).                </p>
+            </div>
+            <div class="missionvision col-md-6 text-center">
+                <h2>MISSION</h2>
+                <p>The School of Arts and Sciences commits itself into the integral development of Catholic leaders and seeks to produce world class graduates who are: BIASA (academically competent), MAGANACA (morally upright), and MAYAP (socially responsible).</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/arrow-up.png" alt="" width="20px"></button>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Facebook Icon and Text Credits -->
+                <div class="col-lg-4 text-lg-start d-flex align-items-center">
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/UAmcsaofficial" aria-label="Facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <p class="text-muted mb-0">Website by BSIT-2A Group 4 in cooperation with MCSA</p>
+                </div>
+                <!-- Right Side: Logos -->
+                <div class="col-lg-8 text-lg-end">
+                    <img src="assets/img/MCSA Logo 2024-2025.png" alt="Logo 1" style="height: 60px;">
+                    <img src="assets/img/SAS.png" alt="Logo 2" style="height: 60px;">
+                    <img src="assets/img/AB Comm Logo (Improved).png" alt="Logo 3" style="height: 60px;">
+                    <img src="assets/img/UA-Logo.png" alt="" style="height: 60px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup -->
+    <style>
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it's above everything */
+        }
+        .modalpopup {
+            background: linear-gradient(135deg, #330000, #AA2200);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
+            color: white;
+            text-align: center;
+            z-index: 10000; /* Even higher than the overlay */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #b21310;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .close-btn:hover {
+            background: #650b0b;
+        }
+        .learn-more {
+            background: #b21310;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .learn-more:hover {
+            background: #650b0b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+    </style>
+    
+    <!-- Popup Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modalpopup">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <img src="assets/img/placeholder69.jpg" width="100%" height="auto" alt="Mise-en-Scène Documentary and Film Festival">
+            <p class="popuphead"><strong>20th MISE-EN-SCÈNE DOCUMENTARY AND FILM FESTIVAL</strong></p>
+            <p class="popupsub">Experience the best of independent filmmaking!</p>
+            <button class="learn-more" onclick="window.open('https://www.facebook.com/watch/?v=577892298632330&rdid=cVkhrgEXHOUfxY72', '_blank')">Learn More</button>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("modalOverlay").style.display = "flex";
+        });
+    
+        function closeModal() {
+            document.getElementById("modalOverlay").style.display = "none";
+        }
+    </script>
+    
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+</body>
+</html>

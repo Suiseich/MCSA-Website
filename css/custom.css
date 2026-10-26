@@ -1,0 +1,728 @@
+/* ===============================
+   Custom Stylesheet (custom.css)
+   ===============================
+   Use this file to override styles from styles.css
+   and easily customize the Bootstrap template.
+*/
+
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif; /* Change font here */
+    background-color: #f8f9fa; /* Change background color here */
+    color: #333; /* Default text color */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Use flexbox to manage layout */
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding-top: 120px;
+    flex: 1; /* Allow main content to grow and take available space */
+}
+
+/* Scroll Bar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #d38024 #141414;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #141414;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #d38024;
+    border-radius: 20px;
+    border: 3px solid #141414;
+  }
+
+/* Up Button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #650b0b; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    opacity: 90%;
+}
+  
+#myBtn:hover {
+    background-color: #d38024; /* Add a dark-grey background on hover */
+}
+
+.masthead {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2; /* Keeps it behind the text */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; /* Ensures text is above video */
+    color: white;
+}
+
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: #141414 !important; /* Solid dark background */
+    transition: none !important; /* Prevent any fading effects */
+}
+
+.navbar-brand img {
+    height: 80px !important; /* Adjust as needed */
+    width: auto;
+    max-height: none !important;
+    border: 3px solid rgba(178, 19, 16, 0);
+    border-radius: 50%;
+}
+.navbar-brand img:hover {
+    border: 3px solid #b21310;
+}
+
+.solid-navbar {
+    background-color: #141414 !important; /* Ensure navbar stays solid */
+}
+
+.navbar .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.2); /* Make sure toggler is visible */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important; /* Change navbar text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d38024 !important; /* Change hover color */
+    transition: font-size 0.3s ease;
+    font-size: 18px !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: #b21310; /* Primary button color */
+    border-color: #650b0b;
+}
+
+.btn-primary:hover {
+    background-color: #d38024; /* Hover effect */
+}
+
+/* --- Sections & Containers --- */
+.container {
+    max-width: 1200px; /* Adjust container width */
+    margin: auto;
+}
+
+.section {
+    padding: 50px 0; /* Adjust section spacing */
+}
+
+/* Index Body*/
+.sastext {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.visionmission {
+    color: #650b0b; /* Red color for the Vision title */
+    font-size: 36px; /* Larger heading font size */
+    line-height: 1.5; /* Spacing for readability */
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+.missionvision {
+    color: #650b0b; /* Green color for the Mission title */
+    font-size: 36px; /* Larger heading font size */
+    line-height: 1.5; /* Spacing for readability */
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+.missionvision p, .visionmission p  {
+    font-size: 25px; /* Comfortable paragraph font size */
+    margin: 10px 0; /* Paragraph spacing */
+}
+.popuphead {
+    line-height: 20px;
+    padding-top: 25px;
+}
+
+/* Contact */
+.section-heading {
+    font-size: 3rem !important;
+}
+.section-subheading {
+    color: whitesmoke !important;
+    font-weight: lighter !important;
+}
+section#contact {
+    padding-bottom: 170px;
+}
+.contactbg {
+    position: absolute; /* Position it behind the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it fills the entire container */
+    background-image: url("../assets/img/logobg.jpg"); /* Set your desired background color */
+    z-index: -3; /* Place it behind other content */
+}
+.section-subheading a {
+    text-decoration: none;
+}
+.section-subheading a:hover {
+    color: #b21310;
+}
+#fblinkc {
+    padding-top: 20px;
+}
+
+/* Projects body */
+.projects h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1 !important;
+}
+.galleries h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1 !important;
+}
+.project-card {
+    cursor: pointer;
+    height: 80vh; /* 80% of the viewport height */
+    transition: transform 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    color: white; /* Ensures text remains readable */
+    border: none; /* Optional: Removes default border */
+}
+.card-title {
+    font-size: 2rem;
+}
+.project-card:hover {
+    transform: scale(1.010);
+    background: rgba(211,128,36, 0.8); /* Slightly darker on hover */
+}
+.project-card img {
+    height: 80%; /* Image takes most of the card */
+    object-fit: cover; /* Ensures full image fit */
+    max-width: 100%;
+    display: block;
+}
+.card-body {
+    height: 30%; /* Title and text take 30% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/* Modal */
+.modal-content {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: white; /* Ensures text remains readable */
+    border: none; /* Removes default border */
+    backdrop-filter: blur(8px); /* Adds a blur effect for a glass-like look */
+    transition: 0.3s ease-in-out;
+}
+.modal-header, .modal-footer {
+    background: rgba(101, 11, 11, 0.2); /* Light semi-transparent overlay */
+    border: none; /* Optional: Removes default border */
+}
+.modal .btn-close {
+    filter: invert(1); /* Makes it white */
+    opacity: 1; /* Ensures full visibility */
+}
+.modal .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+.modal-body {
+    font-size: 1.6rem;
+}
+.modal-body a {
+    color: #d38024;
+    text-decoration: none;
+}
+.modal-body a:hover {
+    color: #650b0b;
+    text-decoration: none;
+}
+#modalimg {
+    max-width: 90vw;
+    height: auto;
+}
+/* --- Footer --- */
+.footer {
+    position: relative; /* Change to relative */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #141414; /* Ensure background color matches */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for spacing */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.footer a {
+    color: #f8d210; /* Footer link color */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Ensures content and images stay apart */
+    align-items: center;
+    padding: 10px;
+}
+
+.footer img {
+    padding-right: 5px;
+}
+
+/* ===============================
+   Additional Customizations
+   ===============================
+   - Add more styles below as needed
+   - Use !important to override Bootstrap defaults
+*/
+
+/* Matthew CSS */
+#galleryname {
+    padding-top: 100px;
+}
+.figure{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 50px;
+}
+.figure img{
+    max-width: 100%; /* Makes sure the image scales within its container */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.5s ease; 
+    margin: 0;
+    padding: 0,0;
+}
+.figure img:hover{ 
+    transform: scale(1.05); /* Scale the image by 1.2 times */
+}
+.col-6, .col-sm-4, .col-md-4, .col-xl-4 {
+    padding-left: 0; 
+    padding-right: 0; 
+}
+.image-bg{
+    background-image: url("../images/mcsa.png");
+    background-size: cover;
+}
+body {
+    margin: 0;
+    text-align: center;
+}
+.figure-caption {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.galleries::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1; /* Ensure it's above the video but below other content */
+}
+
+/* Mickheil CSS */
+/* Main Event CSS */
+.events_area {
+    position: relative;
+    padding: 130px 0 100px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.events_area h2 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    color: white !important;
+}
+.events_area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+.eventbackground {
+    position: absolute; /* Position it behind the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it fills the entire container */
+    background-color: #141414; /* Set your desired background color */
+    z-index: -3; /* Place it behind other content */
+}
+@media (max-width: 991px) {
+    .bg-video {
+        object-fit: cover;
+    }
+}
+@media (max-width: 991px) {
+    .events_area {
+        padding: 70px 0;
+        margin-top: 100px;
+    }
+    .events_area h2 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    #event1 {
+        padding-bottom: 100px;
+    }
+}
+.events_area .event-link {
+    color: #fdc632;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.events_area .event-link img {
+    margin-left: 5px;
+    display: inline-block;
+}
+.event_details {
+    height: 520px;
+}
+.single_event {
+    margin-bottom: 30px;
+}
+.single_event h2 {
+    font-size: 1.8rem !important;
+}
+.single_event .event_thumb {
+    overflow: hidden;
+}
+.single_event .event_thumb img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single_event .event_details {
+    background: rgba(101, 11, 11, 0.8);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+}
+.single_event .event_details .date {
+    color: #ffffff;
+    padding-right: 15px;
+    border-right: 2px solid #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+}
+.single_event .event_details .date span {
+    display: block;
+    color: #fdc632;
+    font-size: 28px;
+    font-weight: 500;
+}
+.single_event .event_details .time-location {
+    padding-left: 15px;
+    font-size: 14px;
+}
+.single_event .event_details .time-location p {
+    margin-bottom: 0px;
+}
+.single_event .event_details .time-location p span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+.single_event:hover img {
+    transform: scale(1.05);
+}
+.single_event:hover h4 a {
+    color: #fdc632;
+}
+
+/*Timeline Section */
+/* Timeline CSS */
+.timeline-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+/* Timeline container */
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+/* Timeline line */
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+    left: 50%;
+    margin-left: -1px;
+}
+/* Timeline item */
+.timeline > li {
+    position: relative;
+    margin-bottom: 50px;
+}
+/* Timeline badge */
+.timeline > li .timeline-badge {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-color: #d38024;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+/* Timeline panel */
+.timeline > li .timeline-panel {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Left and right alignment */
+.timeline > li .timeline-panel:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ddd;
+}
+.timeline > li.timeline-inverted .timeline-panel {
+    float: right;
+}
+.timeline > li.timeline-inverted .timeline-panel:before {
+    left: -15px;
+    border-color: transparent #ddd transparent transparent;
+}
+/* Timeline heading */
+.timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Timeline date and icons */
+.text-muted {
+    color: #777;
+}
+.timeline-badge i {
+    font-size: 1.2rem;
+}
+/* Responsive adjustments Events */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 30px;
+    }
+    .timeline > li .timeline-badge {
+        left: 30px;
+    }
+    .timeline > li .timeline-panel {
+        width: 90%;
+        float: right;
+    }
+    .timeline > li.timeline-inverted .timeline-panel {
+        float: right;
+    }
+}
+.timeline-inverted h4 {
+    padding-top: 19px;
+}
+
+/* About Page */
+#aboutpage {
+    background-color: #1c1b21;
+    color: white !important;
+}
+#abouth2 {
+    padding-bottom: 40px;
+}
+#aboutpage p {
+    color: #d38024;
+}
+
+/* Responsiveness */
+@media (max-width: 412px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .masthead-heading {
+        font-size: 39px !important; /* Adjust font size */
+        text-align: center; /* Center align */    
+    }
+    .masthead-subheading {
+        font-size: 1rem !important;
+    }
+    .missionvision p, .visionmission p  {
+        font-size: 20px; /* Comfortable paragraph font size */
+        margin: 10px 0; /* Paragraph spacing */
+    }
+}
+@media (max-width: 521px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .missionvision p, .visionmission p  {
+        font-size: 20px; /* Comfortable paragraph font size */
+        margin: 10px 0; /* Paragraph spacing */
+    }
+}
+@media (min-width: 412px) and (max-width: 521px) {
+    .masthead-heading {
+        font-size: 39px !important; /* Adjust font size */
+        text-align: center; /* Center align */    
+    }
+    .masthead-subheading {
+        font-size: 1rem !important;
+    }
+    .missionvision p, .visionmission p  {
+        font-size: 20px; /* Comfortable paragraph font size */
+        margin: 10px 0; /* Paragraph spacing */
+    }
+}
+@media (max-width: 360px) {
+    .masthead-heading {
+        font-size: 35px !important; /* Adjust font size */
+        text-align: center; /* Center align */    
+    }
+    .masthead-subheading {
+        font-size: 1rem !important;
+    }
+    .missionvision p, .visionmission p  {
+        font-size: 20px; /* Comfortable paragraph font size */
+        margin: 10px 0; /* Paragraph spacing */
+    }
+}
+@media (min-width: 521px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .missionvision p, .visionmission p  {
+        font-size: 20px; /* Comfortable paragraph font size */
+        margin: 10px 0; /* Paragraph spacing */
+    }
+}
+
+/* Modal Responsiveness */
+@media (max-width: 768px) { /* Tablets */
+    .project-card {
+        margin-bottom: 15px;
+    }
+    .card {
+        height: 400px;
+    }
+    .card img{
+        height: 200px;
+    }
+    .projects h2 {
+        padding-top: 45px;
+    }
+    
+}
+
+@media (max-width: 430px) { /* Phones */
+    .card {
+        height: 300px;
+    }
+    .card img{
+        height: 150px !important;
+    }
+    .project-card {
+        width: 100%;
+        text-align: center; /* Center text */
+    }
+    .project-card img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+        border-radius: 10px; /* Optional for a smooth look */
+    }
+    .project-card .card-body {
+        padding: 10px;
+    }
+    .project-card .card-title {
+        font-size: 1.2rem;
+    }
+    .project-card .card-text {
+        font-size: 0.9rem;
+    }
+}

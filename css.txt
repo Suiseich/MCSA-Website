@@ -1,0 +1,195 @@
+/* Main Event CSS */
+body{margin-top:20px;}
+.events_area {
+    padding: 130px 0 100px;
+    background: #ffffff;
+}
+@media (max-width: 991px) {
+    .events_area {
+        padding: 70px 0;
+    }
+}
+.events_area .event-link {
+    color: #fdc632;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.events_area .event-link img {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.single_event {
+    margin-bottom: 30px;
+}
+.single_event .event_thumb {
+    overflow: hidden;
+}
+.single_event .event_thumb img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single_event .event_details {
+    background: rgba(0, 35, 71, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+}
+.single_event .event_details .date {
+    color: #ffffff;
+    padding-right: 15px;
+    border-right: 2px solid #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+}
+.single_event .event_details .date span {
+    display: block;
+    color: #fdc632;
+    font-size: 28px;
+    font-weight: 500;
+}
+.single_event .event_details .time-location {
+    padding-left: 15px;
+    font-size: 14px;
+}
+.single_event .event_details .time-location p {
+    margin-bottom: 0px;
+}
+.single_event .event_details .time-location p span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+.single_event:hover img {
+    transform: scale(1.1);
+}
+.single_event:hover h4 a {
+    color: #fdc632;
+}
+
+/*Timeline Section */
+/* Timeline CSS */
+.timeline-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Timeline container */
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+/* Timeline line */
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* Timeline item */
+.timeline > li {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Timeline badge */
+.timeline > li .timeline-badge {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-color: #727cf5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* Timeline panel */
+.timeline > li .timeline-panel {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and right alignment */
+.timeline > li .timeline-panel:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ddd;
+}
+
+.timeline > li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted .timeline-panel:before {
+    left: -15px;
+    border-color: transparent #ddd transparent transparent;
+}
+
+/* Timeline heading */
+.timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Timeline date and icons */
+.text-muted {
+    color: #777;
+}
+
+.timeline-badge i {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 30px;
+    }
+    .timeline > li .timeline-badge {
+        left: 30px;
+    }
+    .timeline > li .timeline-panel {
+        width: 90%;
+        float: right;
+    }
+    .timeline > li.timeline-inverted .timeline-panel {
+        float: right;
+    }
+}
